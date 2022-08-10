@@ -1,0 +1,13 @@
+﻿<WebsiteItemLayouts>
+  <PageItemLayouts>
+    <ItemLayout systemname="Dw_Article" template="" />
+    <ItemLayout systemname="Grid_Page" template="" />
+    <ItemLayout systemname="Dw_Page" template="" />
+  </PageItemLayouts>
+  <ParagraphItemLayouts>
+    <ItemLayout systemname="Image_Block" template="" />
+    <ItemLayout systemname="Slider_Block" template="" />
+    <ItemLayout systemname="Statement_Block" template="" />
+    <ItemLayout systemname="Text_Block" template="" />
+  </ParagraphItemLayouts>
+</WebsiteItemLayouts>

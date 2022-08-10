@@ -1,0 +1,13 @@
+﻿@inherits Dynamicweb.Rendering.ViewModelTemplate<Dynamicweb.Frontend.GridRowViewModel>
+
+<div>
+  <table style="width:100%;table-layout:fixed;">
+        <tbody>
+            <tr>
+                <td>@Model.Column(1).Output()</td>
+              	<td>@Model.Column(2).Output()</td>
+              	<td>@Model.Column(3).Output()</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<items>
+  <item category="content" name="Article" systemName="Dw_Article" description="" icon="NewspaperO" iconColor="Default" image="" includeInUrlIndex="False" pageDefaultView="item" fieldForTitle="Name" title="" inherits="Dw_Page" useCache="False">
+    <fields>
+      <field name="Name" systemName="Name" description="" type="System.String, mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Content.Items.Editors.InputHTML5Editor, Dynamicweb">
+          <editorConfuguration><Parameters><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Type" value="text" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Pattern" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Placeholder" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Size" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Min" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Max" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Step" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Autocomplete" value="False" /><Parameter addin="Dynamicweb.Content.Items.Editors.InputHTML5Editor" name="Required" value="True" /></Parameters></editorConfuguration>
+        </editor>
+        <validators>
+          <validator type="Dynamicweb.Content.Items.Editors.RequiredValidator, Dynamicweb" errorMessage="" />
+        </validators>
+      </field>
+      <field name="Description" systemName="Description" description="" type="System.String, mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Content.Items.Editors.LongTextEditor, Dynamicweb">
+          <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.LongTextEditor"><Parameter addin="Dynamicweb.Content.Items.Editors.LongTextEditor" name="Rows" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.LongTextEditor" name="Cols" value="" /></Parameters></editorConfuguration>
+        </editor>
+      </field>
+      <field name="Image" systemName="Image" description="" type="System.String, mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Content.Items.Editors.FileEditor, Dynamicweb">
+          <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.FileEditor"><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Base directory" value="/Images" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Extensions" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Show as image selector" value="True" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Use focal point selector for images" value="True" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Allow file upload from frontend" value="False" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Max files to add" value="" /></Parameters></editorConfuguration>
+        </editor>
+      </field>
+    </fields>
+    <rules>
+      <rule name="Allow in websites" type="Dynamicweb.Content.Items.Activation.AreaRestrictionRule, Dynamicweb" value="*" />
+      <rule name="" type="Dynamicweb.Content.Items.Activation.ChildItemTypeRestrictionRule, Dynamicweb" value="Dw_Page" />
+      <rule name="" type="Dynamicweb.Content.Items.Activation.ModuleAttachmentRestrictionRule, Dynamicweb" value="Nothing" />
+      <rule name="Allowed parents" type="Dynamicweb.Content.Items.Activation.ParentRestrictionRule, Dynamicweb" value="RootOfWebsite,RegularPage" />
+      <rule name="Enable item type for" type="Dynamicweb.Content.Items.Activation.StructureRestrictionRule, Dynamicweb" value="Pages" />
+    </rules>
+    <layout>
+      <groups>
+        <group name="General" systemName="General" collapsibleState="None" visibilityField="" visibilityCondition="" visibilityConditionValueType="" visibilityConditionValue="">
+          <fields>
+            <field systemName="Name" />
+            <field systemName="Description" />
+            <field systemName="Image" />
+          </fields>
+        </group>
+      </groups>
+    </layout>
+  </item>
+</items>

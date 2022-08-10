@@ -1,0 +1,8 @@
+﻿@inherits Dynamicweb.Rendering.ViewModelTemplate<Dynamicweb.Frontend.ParagraphViewModel>
+
+<div>
+  	<h3>@Model.Item.GetString("Title")</h3>
+  	<img src="/Admin/Public/GetImage.ashx?Image=@Model.Item.GetFile("Image")&Width=100" style="max-width:100%;"/>
+  	<div>@Model.Item.GetString("Text")</div>
+  <cite>@Model.Item.GetString("Cite")</cite>
+</div>
