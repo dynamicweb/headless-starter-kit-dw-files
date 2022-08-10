@@ -5,7 +5,7 @@
 		"Description": "1 row with 1 column",
 		"Template": "1Column.cshtml",
 		"ColumnCount": 1,
-		"ItemType": "",
+		"ItemType": "1_Column",
 		"Thumbnail": ""
 	},
     {
@@ -14,7 +14,7 @@
 		"Description": "1 row with 2 columns",
 		"Template": "2Columns.cshtml",
 		"ColumnCount": 2,
-		"ItemType": "",
+		"ItemType": "2_Columns",
 		"Thumbnail": ""
 	},
     {
@@ -23,7 +23,7 @@
 		"Description": "1 row with 3 columns",
 		"Template": "3Columns.cshtml",
 		"ColumnCount": 3,
-		"ItemType": "",
+		"ItemType": "3_Columns",
 		"Thumbnail": ""
 	}
 ]
