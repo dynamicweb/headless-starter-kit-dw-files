@@ -1,0 +1,19 @@
+﻿@inherits Dynamicweb.Rendering.ViewModelTemplate<Dynamicweb.Frontend.PageViewModel>
+
+@Title("Grid page template")
+@MasterPageFile("index.cshtml")
+
+<style>
+	.container {
+  		--max-width: 1400px;
+        --padding: 2rem;
+        margin-inline: auto;
+        width: min(var(--max-width), 100% - (var(--padding) * 2));
+        position: relative;
+        z-index: 1;
+  	}
+</style>
+
+<div class="container">
+@Model.Grid("Grid", "Grid", "default:true;sort:1", "Grid_Page")
+</div>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<items>
+  <item category="Paragrahs" name="Product Groups Slider Large Block" systemName="Product_Groups_Slider_Large_Block" description="" icon="Exchange" iconColor="None" image="" includeInUrlIndex="False" pageDefaultView="item" fieldForTitle="Title" title="" inherits="" useCache="False">
+    <fields>
+      <field name="Title" systemName="Title" description="" type="System.String, mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Content.Items.Editors.TextEditor, Dynamicweb">
+          <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.TextEditor" /></editorConfuguration>
+        </editor>
+      </field>
+      <field name="Product Groups" systemName="ProductGroups" description="" type="System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Ecommerce.Content.Items.Editors.ProductCatalogGroupEditor, Dynamicweb.Ecommerce">
+          <editorConfuguration><Parameters addin="Dynamicweb.Ecommerce.Content.Items.Editors.ProductCatalogGroupEditor"><Parameter addin="Dynamicweb.Ecommerce.Content.Items.Editors.ProductCatalogGroupEditor" name="Show on paragraph" value="" /><Parameter addin="Dynamicweb.Ecommerce.Content.Items.Editors.ProductCatalogGroupEditor" name="ShowType" value="1" /><Parameter addin="Dynamicweb.Ecommerce.Content.Items.Editors.ProductCatalogGroupEditor" name="RenderProductsFromGroups" value="False" /></Parameters></editorConfuguration>
+        </editor>
+      </field>
+      <field name="Ecom root page" systemName="EcomRootPage" description="" type="System.String, mscorlib" excludeFromSearch="False">
+        <editor type="Dynamicweb.Content.Items.Editors.LinkEditor, Dynamicweb">
+          <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.LinkEditor"><Parameter addin="Dynamicweb.Content.Items.Editors.LinkEditor" name="EnablePageSelection" value="True" /><Parameter addin="Dynamicweb.Content.Items.Editors.LinkEditor" name="EnableParagraphSelection" value="False" /><Parameter addin="Dynamicweb.Content.Items.Editors.LinkEditor" name="SelectOnlyID" value="False" /><Parameter addin="Dynamicweb.Content.Items.Editors.LinkEditor" name="EnableFileSelection" value="False" /></Parameters></editorConfuguration>
+        </editor>
+      </field>
+    </fields>
+    <rules>
+      <rule name="Allow in websites" type="Dynamicweb.Content.Items.Activation.AreaRestrictionRule, Dynamicweb" value="*" />
+      <rule name="" type="Dynamicweb.Content.Items.Activation.ModuleAttachmentRestrictionRule, Dynamicweb" value="Nothing" />
+      <rule name="Allowed parents" type="Dynamicweb.Content.Items.Activation.ParentRestrictionRule, Dynamicweb" value="RootOfWebsite,RegularPage" />
+      <rule name="Enable item type for" type="Dynamicweb.Content.Items.Activation.StructureRestrictionRule, Dynamicweb" value="Paragraphs" />
+    </rules>
+    <layout>
+      <groups>
+        <group name="Generelt" systemName="General" collapsibleState="None" visibilityField="" visibilityCondition="" visibilityConditionValueType="" visibilityConditionValue="">
+          <fields>
+            <field systemName="Title" />
+            <field systemName="ProductGroups" />
+            <field systemName="EcomRootPage" />
+          </fields>
+        </group>
+      </groups>
+    </layout>
+  </item>
+</items>

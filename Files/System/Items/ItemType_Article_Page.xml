@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?>
 <items>
-  <item category="" name="Article" systemName="Dw_Article" description="" icon="NewspaperO" iconColor="None" image="" includeInUrlIndex="False" pageDefaultView="item" fieldForTitle="Title" title="" inherits="Grid_Page" useCache="False">
+  <item category="" name="Article Page" systemName="Article_Page" description="" icon="FileText" iconColor="None" image="" includeInUrlIndex="False" pageDefaultView="item" fieldForTitle="Title" title="" inherits="" useCache="False">
     <fields>
-      <field name="Category" systemName="Category" description="" type="System.String, mscorlib" excludeFromSearch="False">
+      <field name="Title" systemName="Title" description="" type="System.String, mscorlib" excludeFromSearch="False">
         <editor type="Dynamicweb.Content.Items.Editors.TextEditor, Dynamicweb">
           <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.TextEditor" /></editorConfuguration>
         </editor>
       </field>
-      <field name="Description" systemName="Description" description="" type="System.String, mscorlib" excludeFromSearch="False">
+      <field name="Subtitle" systemName="Subtitle" description="" type="System.String, mscorlib" excludeFromSearch="False">
         <editor type="Dynamicweb.Content.Items.Editors.LongTextEditor, Dynamicweb">
           <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.LongTextEditor"><Parameter addin="Dynamicweb.Content.Items.Editors.LongTextEditor" name="Rows" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.LongTextEditor" name="Cols" value="" /></Parameters></editorConfuguration>
         </editor>
       </field>
-      <field name="Image" systemName="Image" description="" type="System.String, mscorlib" excludeFromSearch="False">
+      <field name="Cover image" systemName="CoverImage" description="" type="System.String, mscorlib" excludeFromSearch="False">
         <editor type="Dynamicweb.Content.Items.Editors.FileEditor, Dynamicweb">
           <editorConfuguration><Parameters addin="Dynamicweb.Content.Items.Editors.FileEditor"><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Base directory" value="/Images" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Extensions" value="" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Show as image selector" value="True" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Use focal point selector for images" value="True" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Allow file upload from frontend" value="False" /><Parameter addin="Dynamicweb.Content.Items.Editors.FileEditor" name="Max files to add" value="" /></Parameters></editorConfuguration>
         </editor>
@@ -20,7 +20,7 @@
     </fields>
     <rules>
       <rule name="Allow in websites" type="Dynamicweb.Content.Items.Activation.AreaRestrictionRule, Dynamicweb" value="*" />
-      <rule name="" type="Dynamicweb.Content.Items.Activation.ChildItemTypeRestrictionRule, Dynamicweb" value="1_Column,2_Columns,3_Columns,Columns,Feature_Block,Image_Block,Slider_Block,Statement_Block,Text_Block" />
+      <rule name="" type="Dynamicweb.Content.Items.Activation.ChildItemTypeRestrictionRule, Dynamicweb" value="1_Column,2_Columns,3_Columns,Dw_Article,Columns,Feature_Block,Image_Block,Slider_Block,Statement_Block,Text_Block" />
       <rule name="" type="Dynamicweb.Content.Items.Activation.ModuleAttachmentRestrictionRule, Dynamicweb" value="Nothing" />
       <rule name="Allowed parents" type="Dynamicweb.Content.Items.Activation.ParentRestrictionRule, Dynamicweb" value="RootOfWebsite,RegularPage" />
       <rule name="Enable item type for" type="Dynamicweb.Content.Items.Activation.StructureRestrictionRule, Dynamicweb" value="Pages" />
@@ -29,10 +29,9 @@
       <groups>
         <group name="Generelt" systemName="General" collapsibleState="None" visibilityField="" visibilityCondition="" visibilityConditionValueType="" visibilityConditionValue="">
           <fields>
-            <field systemName="Category" />
-            <field systemName="Description" />
-            <field systemName="Image" />
             <field systemName="Title" />
+            <field systemName="Subtitle" />
+            <field systemName="CoverImage" />
           </fields>
         </group>
       </groups>

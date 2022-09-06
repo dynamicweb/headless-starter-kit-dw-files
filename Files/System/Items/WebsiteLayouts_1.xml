@@ -1,11 +1,15 @@
 ﻿<WebsiteItemLayouts>
   <PageItemLayouts>
     <ItemLayout systemname="Dw_Article" template="" />
+    <ItemLayout systemname="Article_Page" template="" />
     <ItemLayout systemname="Grid_Page" template="" />
     <ItemLayout systemname="Dw_Page" template="" />
   </PageItemLayouts>
   <ParagraphItemLayouts>
+    <ItemLayout systemname="Feature_Block" template="" />
     <ItemLayout systemname="Image_Block" template="" />
+    <ItemLayout systemname="Product_Groups_Slider_Block" template="" />
+    <ItemLayout systemname="Product_Slider_Block" template="" />
     <ItemLayout systemname="Slider_Block" template="" />
     <ItemLayout systemname="Statement_Block" template="" />
     <ItemLayout systemname="Text_Block" template="" />

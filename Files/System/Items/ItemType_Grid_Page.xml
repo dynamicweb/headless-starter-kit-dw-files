@@ -10,7 +10,7 @@
     </fields>
     <rules>
       <rule name="Allow in websites" type="Dynamicweb.Content.Items.Activation.AreaRestrictionRule, Dynamicweb" value="*" />
-      <rule name="" type="Dynamicweb.Content.Items.Activation.ChildItemTypeRestrictionRule, Dynamicweb" value="1_Column,1Column,2_Columns,3_Columns,Dw_Article,Columns,Feature_Block,Grid_Page,Image_Block,Dw_Page,Slider_Block,Statement_Block,Text_Block" />
+      <rule name="" type="Dynamicweb.Content.Items.Activation.ChildItemTypeRestrictionRule, Dynamicweb" value="1_Column,2_Columns,3_Columns,Dw_Article,Columns,Ecom_Block,Feature_Block,Grid_Page,Image_Block,Dw_Page,Product_Groups_Slider_Block,Product_Groups_Slider_Large_Block,Product_Slider_Block,Slider_Block,Statement_Block,Text_Block" />
       <rule name="" type="Dynamicweb.Content.Items.Activation.ModuleAttachmentRestrictionRule, Dynamicweb" value="Nothing" />
       <rule name="Allowed parents" type="Dynamicweb.Content.Items.Activation.ParentRestrictionRule, Dynamicweb" value="RootOfWebsite,RegularPage" />
       <rule name="Enable item type for" type="Dynamicweb.Content.Items.Activation.StructureRestrictionRule, Dynamicweb" value="Pages" />
